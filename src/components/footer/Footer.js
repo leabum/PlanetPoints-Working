@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import {
   Nav,
   Navbar,
@@ -12,7 +12,7 @@ import {
 import { NavLink } from "react-router-dom";
 import styled from "styled-components";
 import logo from "../../assets/images/logo-round.png";
-import { LinkContainer } from 'react-router-bootstrap'
+import { LinkContainer } from "react-router-bootstrap";
 import AuthContext from "../../AuthContext";
 
 const Styles = styled.div`
@@ -23,10 +23,9 @@ const Styles = styled.div`
 `;
 
 export const Footer = props => {
-
   return (
     <Styles>
-        <Row style={{marginRight: 0}}></Row>
+      <Row style={{ marginRight: 0 }}></Row>
     </Styles>
   );
 };

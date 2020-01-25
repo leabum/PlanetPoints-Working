@@ -137,4 +137,3 @@ export const Contact = () => {
     </Styles>
   );
 };
-

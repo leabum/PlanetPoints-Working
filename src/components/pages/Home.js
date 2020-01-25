@@ -55,7 +55,11 @@ const Styles = styled.div`
 }
 
 .card-header{
-  background-color: rgb(250, 250, 250);
+  background-color: white;
+}
+
+.card-body2{
+  background-color: rgb(220,220,220);
 }
 
 `;
@@ -64,10 +68,7 @@ export const Home = () => {
   return (
     <Styles>
       <React.Fragment>
-        <Row
-          className="justify-content-center"
-          style={{ paddingTop: 0 }}
-        >
+        <Row className="justify-content-center" style={{ paddingTop: 0 }}>
           <div>
             <Row className="justify-content-center">
               <h1>So funktioniert's</h1>
@@ -119,12 +120,12 @@ export const Home = () => {
             </Row>
           </div>
         </Row>
-        <Row className="justify-content-center">
+        <Row style={{backgroundColor: "rgb(250,250,250)"}} className="justify-content-center">
           <h1>Unsere Vorteile</h1>
         </Row>
         <Row
           className="justify-content-center"
-          style={{ marginBottom: "50px", margin: 0 }}
+          style={{ marginBottom: "50px", margin: 0, backgroundColor: "rgb(250,250,250)"}}
         >
           <Col md="6">
             <Accordion defaultActiveKey="1">
@@ -135,14 +136,14 @@ export const Home = () => {
                   </Accordion.Toggle>
                 </Card.Header>
                 <Accordion.Collapse eventKey="1">
-                  <Card.Body>
+                  <Card.Body className="card-body2">
                     Plastik hat eine Vielzahl von gesundheitlichen
                     Nebenwirkungen auf den menschlichen Körper. Plastikpartikel
                     und zur Herstellung verwendete Chemikalien befinden sich in
                     unserer Atemluft und in unserem Trinkwasser. Die Folgen sind
                     Krankheiten wie Krebs, auch Fortpflanzungs- und
-                    Entwicklungsstörungen können resultieren. Wusstest du,
-                    dass für Frauen ein erhöhtes Risiko besteht? Im Blut von
+                    Entwicklungsstörungen können resultieren. Wusstest du, dass
+                    für Frauen ein erhöhtes Risiko besteht? Im Blut von
                     schwangeren US-Amerikanerinnen wurden im Schnitt 56
                     verschiedene Industriechemikalien gefunden. Quelle:
                     Plastikatlas 2019
@@ -159,7 +160,7 @@ export const Home = () => {
                   </Accordion.Toggle>
                 </Card.Header>
                 <Accordion.Collapse eventKey="3">
-                  <Card.Body>
+                  <Card.Body className="card-body2">
                     Jeder Einkauf bei unseren PlanetPatrons bringt dir
                     PlanetPoints, mit diesen kannst du bezahlen oder sie per App
                     innerhalb von Sekunden an ausgewählte Projekte spenden.
@@ -176,7 +177,7 @@ export const Home = () => {
                   </Accordion.Toggle>
                 </Card.Header>
                 <Accordion.Collapse eventKey="2">
-                  <Card.Body>
+                  <Card.Body className="card-body2">
                     Mikroplastik ist bereits heute an den abgelegensten Orten
                     der Welt vorzufinden und verbreitet sich immer weiter.
                     Plastik besteht meist aus fossilen Rohstoffen wie Erdöl oder
@@ -198,7 +199,7 @@ export const Home = () => {
                   </Accordion.Toggle>
                 </Card.Header>
                 <Accordion.Collapse eventKey="0">
-                  <Card.Body>
+                  <Card.Body className="card-body2">
                     Anders als Mitbewerber, werten wir deine Daten nicht zu
                     Marktforschungszwecken aus und verkaufen diese nicht an
                     Dritte. Diese Website sammelt übrigens keine Cookies.

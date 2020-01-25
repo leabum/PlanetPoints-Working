@@ -64,8 +64,14 @@ const Styles = styled.div`
 export const Jumbotron = () => (
   <Styles>
     <Jumbo fluid={true}>
-      <video className="video-background" preload="true" muted="true" autoplay="true" loop="true">
-          <source src={bgvid} type="video/mp4" />
+      <video
+        className="video-background"
+        preload="true"
+        muted="true"
+        autoplay="true"
+        loop="true"
+      >
+        <source src={bgvid} type="video/mp4" />
       </video>
       <Container>
         <Row className="justify-content-center">

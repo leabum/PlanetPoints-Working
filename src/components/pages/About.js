@@ -61,14 +61,10 @@ export const About = () => {
     setSrc2(maurice);
   };
 
-
   return (
     <Styles>
       <React.Fragment>
-        <Row
-          className="justify-content-center"
-          style={{ paddingTop: 0 }}
-        >
+        <Row className="justify-content-center" style={{ paddingTop: 0 }}>
           <div>
             <Row className="justify-content-center">
               <h1>Wer wir sind</h1>

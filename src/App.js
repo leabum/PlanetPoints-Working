@@ -19,18 +19,18 @@ function App() {
 
   return (
     <React.Fragment>
-        <AuthProvider>
-          <NavigationBar />
-          <Jumbotron />
-          <Switch>
-            <Route exact path="/" component={Home} />
-            <Route path="/about" component={About} />
-            <Route path="/contact" component={Contact} />
-            <Route path="/impressum" component={Impressum} />
-            <Route exact component={NoMatch} />
-          </Switch>
-          <Footer/>
-        </AuthProvider>
+      <AuthProvider>
+        <NavigationBar />
+        <Jumbotron />
+        <Switch>
+          <Route exact path="/" component={Home} />
+          <Route path="/about" component={About} />
+          <Route path="/contact" component={Contact} />
+          <Route path="/impressum" component={Impressum} />
+          <Route exact component={NoMatch} />
+        </Switch>
+        <Footer />
+      </AuthProvider>
     </React.Fragment>
   );
 }
