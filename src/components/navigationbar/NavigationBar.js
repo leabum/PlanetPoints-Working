@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import {
   Nav,
   Navbar,
@@ -12,6 +12,7 @@ import {
 import { NavLink } from "react-router-dom";
 import styled from "styled-components";
 import logo from "../../assets/images/logo-round.png";
+import { LinkContainer } from 'react-router-bootstrap'
 import AuthContext from "../../AuthContext";
 
 const Styles = styled.div`
@@ -52,12 +53,21 @@ const Styles = styled.div`
     display: flex;
     align-items:center
   }
+
+  button{
+    border: 0;
+    padding: 0;
+    background: white;
+  }
 `;
 
 export const NavigationBar = props => {
+
+  const [expanded, setExpanded] = useState(false);
+
   return (
-    <Styles style={{ position: "sticky", top: 0, zIndex: 1 }}>
-      <Navbar expand="lg">
+    <Styles style={{ position: "sticky", top: 0, zIndex: 3 }}>
+      <Navbar expanded={expanded} collapseOnSelect expand="lg">
         <Container>
           <Navbar.Brand href="/">
             <h2>PlanetPoints</h2>
@@ -68,45 +78,30 @@ export const NavigationBar = props => {
               style={{ marginLeft: 5 }}
             />
           </Navbar.Brand>
-          <Navbar.Toggle aria-controls="basic-navbar-nav" />
-          <NavigationBarUserContent />
+          <Navbar.Toggle onClick={() => setExpanded(expanded ? false : "expanded")} aria-controls="responsive-navbar-nav" />
+          <Navbar.Collapse id="responsive-navbar-nav">
+            <Nav className="ml-auto">
+                
+                  <LinkContainer onClick={() => setExpanded(false)} className="linkstyle" exact to="/">
+                    <button>Home</button>
+                  </LinkContainer>
+              
+                  <LinkContainer onClick={() => setExpanded(false)} className="linkstyle" exact to="/About">
+                    <button>Über uns</button>
+                  </LinkContainer>
+              
+                  <LinkContainer onClick={() => setExpanded(false)} className="linkstyle" exact to="/Contact">
+                    <button>Kontakt</button>
+                  </LinkContainer>
+               
+                  <LinkContainer onClick={() => setExpanded(false)} className="linkstyle" exact to="/Impressum">
+                    <button>Impressum</button>
+                  </LinkContainer>
+                
+            </Nav>
+          </Navbar.Collapse>
         </Container>
       </Navbar>
     </Styles>
   );
 };
-
-const NavigationBarUserContent = () => (
-  <Navbar.Collapse id="basic-navbar-nav">
-    <Nav fill variant="pills" className="ml-auto">
-      <Nav.Item>
-        <Nav.Link>
-          <NavLink className="linkstyle" exact to="/">
-            Home
-          </NavLink>
-        </Nav.Link>
-      </Nav.Item>
-      <Nav.Item>
-        <Nav.Link>
-          <NavLink className="linkstyle" exact to="/About">
-            Über uns
-          </NavLink>
-        </Nav.Link>
-      </Nav.Item>
-      <Nav.Item>
-        <Nav.Link>
-          <NavLink className="linkstyle" exact to="/Contact">
-            Kontakt
-          </NavLink>
-        </Nav.Link>
-      </Nav.Item>
-      <Nav.Item>
-        <Nav.Link>
-          <NavLink className="linkstyle" exact to="/Impressum">
-            Impressum
-          </NavLink>
-        </Nav.Link>
-      </Nav.Item>
-    </Nav>
-  </Navbar.Collapse>
-);

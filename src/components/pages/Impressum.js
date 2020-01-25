@@ -31,7 +31,7 @@ export const Impressum = () => {
           </p>
           <h2>Kontakt</h2>
           <p>
-            Telefon: 01633341554
+            Telefon: +49 1633341554
             <br />
             E-Mail: leander@planetpoints.de
           </p>

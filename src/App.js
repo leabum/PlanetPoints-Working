@@ -8,6 +8,7 @@ import { NoMatch } from "./components/pages/NoMatch";
 import { Layout } from "./components/layout/Layout";
 import { NavigationBar } from "./components/navigationbar/NavigationBar";
 import { Jumbotron } from "./components/jumbotron/Jumbotron";
+import { Footer } from "./components/footer/Footer";
 import AuthProvider from "./AuthProvider";
 
 function App() {
@@ -28,6 +29,7 @@ function App() {
             <Route path="/impressum" component={Impressum} />
             <Route exact component={NoMatch} />
           </Switch>
+          <Footer/>
         </AuthProvider>
     </React.Fragment>
   );

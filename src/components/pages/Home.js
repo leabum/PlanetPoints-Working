@@ -15,7 +15,7 @@ import bottle from "../../assets/images/bottle3.jpg";
 
 const Styles = styled.div`
   h1{
-    font-family: Comfortaa;
+    font-family: Comfortaa, Arial;
     margin-top: 25px
     margin-bottom: 25px
     text-align: center;
@@ -26,7 +26,7 @@ const Styles = styled.div`
     margin-top: 0px;
   }
   .card-cust{
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: rgb(250, 250, 250);
     margin-right: 20px
     margin-bottom: 20px
   }
@@ -54,6 +54,10 @@ const Styles = styled.div`
   border-style: none;
 }
 
+.card-header{
+  background-color: rgb(250, 250, 250);
+}
+
 `;
 
 export const Home = () => {
@@ -61,12 +65,12 @@ export const Home = () => {
     <Styles>
       <React.Fragment>
         <Row
-          className="justify-content-center radialBg"
+          className="justify-content-center"
           style={{ paddingTop: 0 }}
         >
           <div>
             <Row className="justify-content-center">
-              <h1 style={{ color: "white" }}>So funktioniert's</h1>
+              <h1>So funktioniert's</h1>
             </Row>
 
             <Row className="justify-content-center">
@@ -120,24 +124,10 @@ export const Home = () => {
         </Row>
         <Row
           className="justify-content-center"
-          style={{ marginBottom: "50px" }}
+          style={{ marginBottom: "50px", margin: 0 }}
         >
-          <Col xs lg="6">
-            <Accordion defaultActiveKey="0">
-              <Card>
-                <Card.Header className={"center"}>
-                  <Accordion.Toggle as={Button} variant="link" eventKey="0">
-                    <h5>Mehr Datenschutz</h5>
-                  </Accordion.Toggle>
-                </Card.Header>
-                <Accordion.Collapse eventKey="0">
-                  <Card.Body>
-                    Anders als Mitbewerber, werten wir deine Daten nicht zu
-                    Marktforschungszwecken aus und verkaufen diese nicht an
-                    Dritte. Diese Website sammelt übrigens keine Cookies.
-                  </Card.Body>
-                </Accordion.Collapse>
-              </Card>
+          <Col md="6">
+            <Accordion defaultActiveKey="1">
               <Card>
                 <Card.Header className={"center"}>
                   <Accordion.Toggle as={Button} variant="link" eventKey="1">
@@ -151,11 +141,31 @@ export const Home = () => {
                     und zur Herstellung verwendete Chemikalien befinden sich in
                     unserer Atemluft und in unserem Trinkwasser. Die Folgen sind
                     Krankheiten wie Krebs, auch Fortpflanzungs- und
-                    Entwicklungsstörungen können die Folge sein. Wusstest du,
-                    dass für Frauen ein erhöhtes Risiko besteht: Im Blut von
+                    Entwicklungsstörungen können resultieren. Wusstest du,
+                    dass für Frauen ein erhöhtes Risiko besteht? Im Blut von
                     schwangeren US-Amerikanerinnen wurden im Schnitt 56
                     verschiedene Industriechemikalien gefunden. Quelle:
                     Plastikatlas 2019
+                  </Card.Body>
+                </Accordion.Collapse>
+              </Card>
+              <Card>
+                <Card.Header className={"center"}>
+                  <Accordion.Toggle as={Button} variant="link" eventKey="3">
+                    <h5>
+                      Jeder deiner Einkäufe unterstützt fantastische
+                      Umweltprojekte
+                    </h5>
+                  </Accordion.Toggle>
+                </Card.Header>
+                <Accordion.Collapse eventKey="3">
+                  <Card.Body>
+                    Jeder Einkauf bei unseren PlanetPatrons bringt dir
+                    PlanetPoints, mit diesen kannst du bezahlen oder sie per App
+                    innerhalb von Sekunden an ausgewählte Projekte spenden.
+                    Unser Versprechen: Auch wir spenden bei jeder Transaktion
+                    einen kleinen Betrag an unsere Spendenpartner. So tust du
+                    mit jedem Einkauf etwas Gutes.
                   </Card.Body>
                 </Accordion.Collapse>
               </Card>
@@ -183,21 +193,15 @@ export const Home = () => {
               </Card>
               <Card>
                 <Card.Header className={"center"}>
-                  <Accordion.Toggle as={Button} variant="link" eventKey="3">
-                    <h5>
-                      Jeder deiner Einkäufe unterstützt fantastische
-                      Umweltprojekte
-                    </h5>
+                  <Accordion.Toggle as={Button} variant="link" eventKey="0">
+                    <h5>Mehr Datenschutz</h5>
                   </Accordion.Toggle>
                 </Card.Header>
-                <Accordion.Collapse eventKey="3">
+                <Accordion.Collapse eventKey="0">
                   <Card.Body>
-                    Jeder Einkauf bei unseren PlanetPatrons bringt dir
-                    PlanetPoints, mit diesen kannst du bezahlen oder sie per App
-                    innerhalb von Sekunden an ausgewählte Projekte spenden.
-                    Unser Versprechen: Auch wir spenden bei jeder Transaktion
-                    einen kleinen Betrag an unsere Spendenpartner. So tust du
-                    mit jedem Einkauf etwas Gutes.
+                    Anders als Mitbewerber, werten wir deine Daten nicht zu
+                    Marktforschungszwecken aus und verkaufen diese nicht an
+                    Dritte. Diese Website sammelt übrigens keine Cookies.
                   </Card.Body>
                 </Accordion.Collapse>
               </Card>

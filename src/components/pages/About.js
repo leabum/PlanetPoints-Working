@@ -4,16 +4,14 @@ import styled from "styled-components";
 import ceo1 from "../../assets/images/ceo_state1.png";
 import leander from "../../assets/images/leander2.jpg";
 import maurice from "../../assets/images/maurice2.jpg";
+import leander2 from "../../assets/images/leander2_toggle.jpg";
+import maurice2 from "../../assets/images/maurice2_toggle.jpg";
 
 const Styles = styled.div`
   h1{
-    font-family: Comfortaa;
+    font-family: Comfortaa, Arial;
     margin-top: 20px
-    color: white;
     margin-bottom: 40px
-  }
-  h3, h4{
-    color: rgb(220,220,220);
   }
   .radialBg{
     background-color: #003087;
@@ -48,18 +46,27 @@ export const About = () => {
   const [src2, setSrc2] = useState(maurice);
 
   const onMouseOver = () => {
-    setSrc(ceo1);
+    setSrc(leander2);
   };
 
   const onMouseLeave = () => {
-    setSrc(ceo1);
+    setSrc(leander);
   };
+
+  const onMouseOver2 = () => {
+    setSrc2(maurice2);
+  };
+
+  const onMouseLeave2 = () => {
+    setSrc2(maurice);
+  };
+
 
   return (
     <Styles>
       <React.Fragment>
         <Row
-          className="justify-content-center radialBg"
+          className="justify-content-center"
           style={{ paddingTop: 0 }}
         >
           <div>
@@ -71,6 +78,8 @@ export const About = () => {
                 <Image
                   fluid
                   src={src}
+                  onMouseOver={() => onMouseOver()}
+                  onMouseLeave={() => onMouseLeave()}
                   style={{
                     width: "400px",
                     display: "block",
@@ -101,6 +110,8 @@ export const About = () => {
                 <Image
                   fluid
                   src={src2}
+                  onMouseOver={() => onMouseOver2()}
+                  onMouseLeave={() => onMouseLeave2()}
                   style={{
                     width: "400px",
                     display: "block",
