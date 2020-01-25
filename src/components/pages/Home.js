@@ -81,7 +81,7 @@ export const Home = () => {
                   <Card.Title>1) Kaufe die Artikel, die du liebst</Card.Title>
                   <Card.Text>
                     Je weniger Plastik diese im Verhältnis zu ihrem Inhalt
-                    enthalten, desto mehr PlanetPoints erhälst du. Tipp: Scanne
+                    enthalten, desto mehr PlanetPoints erhälst du. <b>Bio</b> und <b>Fairtrade</b> zählen extra! Tipp: Scanne
                     den Barcode eines Artikel vor dem Kauf mit unserer App, um
                     sofort zu erfahren, wie viele Punkte er dir bringt!
                   </Card.Text>
@@ -120,12 +120,19 @@ export const Home = () => {
             </Row>
           </div>
         </Row>
-        <Row style={{backgroundColor: "rgb(250,250,250)"}} className="justify-content-center">
+        <Row
+          style={{ backgroundColor: "rgb(250,250,250)" }}
+          className="justify-content-center"
+        >
           <h1>Unsere Vorteile</h1>
         </Row>
         <Row
           className="justify-content-center"
-          style={{ marginBottom: "50px", margin: 0, backgroundColor: "rgb(250,250,250)"}}
+          style={{
+            marginBottom: "50px",
+            margin: 0,
+            backgroundColor: "rgb(250,250,250)"
+          }}
         >
           <Col md="6">
             <Accordion defaultActiveKey="1">
