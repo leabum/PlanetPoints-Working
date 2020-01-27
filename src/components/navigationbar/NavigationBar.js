@@ -58,6 +58,7 @@ const Styles = styled.div`
     border: 0;
     padding: 0;
     background: white;
+    outline: none;
   }
 `;
 

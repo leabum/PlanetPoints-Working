@@ -19,13 +19,24 @@ const Styles = styled.div`
   .row{
       margin-right: 0px
       margin-bottom: 40px
+      margin-top: 20px
   }
+
+  button{
+    border: 0;
+    padding: 0;
+    background: white;
+    color: grey;
+    margin-right: 20px
+    outline: none;
 `;
 
 export const Footer = props => {
   return (
     <Styles>
-      <Row style={{ marginRight: 0 }}></Row>
+      <Row className="justify-content-center">
+        <LinkContainer to="/dataprotection"><button>Datenschutz</button></LinkContainer>
+      </Row>
     </Styles>
   );
 };

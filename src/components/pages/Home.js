@@ -59,7 +59,7 @@ const Styles = styled.div`
 }
 
 .card-body2{
-  background-color: rgb(220,220,220);
+  background-color: rgb(240,240,240);
 }
 
 `;
@@ -81,9 +81,10 @@ export const Home = () => {
                   <Card.Title>1) Kaufe die Artikel, die du liebst</Card.Title>
                   <Card.Text>
                     Je weniger Plastik diese im Verhältnis zu ihrem Inhalt
-                    enthalten, desto mehr PlanetPoints erhälst du. <b>Bio</b> und <b>Fairtrade</b> zählen extra! Tipp: Scanne
-                    den Barcode eines Artikel vor dem Kauf mit unserer App, um
-                    sofort zu erfahren, wie viele Punkte er dir bringt!
+                    enthalten, desto mehr PlanetPoints erhälst du. <b>Bio</b>{" "}
+                    und <b>Fairtrade</b> zählen extra! Tipp: Scanne den Barcode
+                    eines Artikel vor dem Kauf mit unserer App, um sofort zu
+                    erfahren, wie viele Punkte er dir bringt!
                   </Card.Text>
                 </Card.Body>
               </Card>

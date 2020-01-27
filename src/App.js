@@ -4,6 +4,7 @@ import { Home } from "./components/pages/Home";
 import { About } from "./components/pages/About";
 import { Contact } from "./components/pages/Contact";
 import { Impressum } from "./components/pages/Impressum";
+import { Dataprotection } from "./components/pages/Dataprotection";
 import { NoMatch } from "./components/pages/NoMatch";
 import { Layout } from "./components/layout/Layout";
 import { NavigationBar } from "./components/navigationbar/NavigationBar";
@@ -27,6 +28,7 @@ function App() {
           <Route path="/about" component={About} />
           <Route path="/contact" component={Contact} />
           <Route path="/impressum" component={Impressum} />
+          <Route path="/dataprotection" component={Dataprotection} />
           <Route exact component={NoMatch} />
         </Switch>
         <Footer />
