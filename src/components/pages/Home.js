@@ -83,7 +83,7 @@ export const Home = () => {
                     Je weniger Plastik diese im Verhältnis zu ihrem Inhalt
                     enthalten, desto mehr PlanetPoints erhälst du. <b>Bio</b>{" "}
                     und <b>Fairtrade</b> zählen extra! Tipp: Scanne den Barcode
-                    eines Artikel vor dem Kauf mit unserer App, um sofort zu
+                    eines Artikels vor dem Kauf mit unserer App, um sofort zu
                     erfahren, wie viele Punkte er dir bringt!
                   </Card.Text>
                 </Card.Body>
@@ -210,7 +210,7 @@ export const Home = () => {
                   <Card.Body className="card-body2">
                     Anders als Mitbewerber, werten wir deine Daten nicht zu
                     Marktforschungszwecken aus und verkaufen diese nicht an
-                    Dritte. Diese Website sammelt übrigens keine Cookies.
+                    Dritte.
                   </Card.Body>
                 </Accordion.Collapse>
               </Card>

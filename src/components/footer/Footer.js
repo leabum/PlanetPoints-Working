@@ -27,15 +27,17 @@ const Styles = styled.div`
     padding: 0;
     background: white;
     color: grey;
-    margin-right: 20px
     outline: none;
+    
 `;
 
 export const Footer = props => {
   return (
     <Styles>
       <Row className="justify-content-center">
-        <LinkContainer to="/dataprotection"><button>Datenschutz</button></LinkContainer>
+        <LinkContainer to="/dataprotection">
+          <button>Datenschutz</button>
+        </LinkContainer>
       </Row>
     </Styles>
   );
