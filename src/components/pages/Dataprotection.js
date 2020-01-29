@@ -8,8 +8,8 @@ const Styles = styled.div`
     font-family: "LouisGeorgeCafeBold", "Arial";
   }
 
-  h1{
-    font-size: 30px
+  h1 {
+    font-size: 30px;
   }
   .custWidth {
     width: 1140px;
