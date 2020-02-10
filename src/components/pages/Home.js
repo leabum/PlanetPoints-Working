@@ -12,7 +12,7 @@ import styled from "styled-components";
 import baby from "../../assets/images/baby2.jpg";
 import handy from "../../assets/images/handy3.jpg";
 import bottle from "../../assets/images/bottle3.jpg";
-import DynamicScrollTop from "../dynamicScrollTop/DynamicScrollTop"
+import DynamicScrollTop from "../dynamicScrollTop/DynamicScrollTop";
 
 const Styles = styled.div`
   h1{
@@ -68,7 +68,7 @@ const Styles = styled.div`
 export const Home = () => {
   return (
     <Styles>
-      <DynamicScrollTop/>
+      <DynamicScrollTop />
       <React.Fragment>
         <Row className="justify-content-center" style={{ paddingTop: 0 }}>
           <div>

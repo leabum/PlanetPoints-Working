@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Image, Container, Row, Col, Carousel } from "react-bootstrap";
 import styled from "styled-components";
-import DynamicScrollTop from "../dynamicScrollTop/DynamicScrollTop"
+import DynamicScrollTop from "../dynamicScrollTop/DynamicScrollTop";
 
 const Styles = styled.div`
   h1,
@@ -30,11 +30,13 @@ const Styles = styled.div`
 export function Dataprotection() {
   return (
     <Styles>
-      <DynamicScrollTop/>
+      <DynamicScrollTop />
       <Row className="justify-content-center">
         <Row className="custWidth">
           <div>
-            <h1 style={{marginTop: "20px", marginBottom: "20px"}}>Datenschutzerkl&auml;rung</h1>
+            <h1 style={{ marginTop: "20px", marginBottom: "20px" }}>
+              Datenschutzerkl&auml;rung
+            </h1>
             <h2>1. Datenschutz auf einen Blick</h2>
             <h3>Allgemeine Hinweise</h3>{" "}
             <p>

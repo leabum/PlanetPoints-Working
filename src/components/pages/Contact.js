@@ -12,7 +12,7 @@ import {
 import styled from "styled-components";
 import contactImg from "../../assets/images/contact_bg3.png";
 import MediaQuery from "react-responsive";
-import DynamicScrollTop from "../dynamicScrollTop/DynamicScrollTop"
+import DynamicScrollTop from "../dynamicScrollTop/DynamicScrollTop";
 
 const Styles = styled.div`
   h1{
@@ -86,7 +86,7 @@ h2 {
 export const Contact = () => {
   return (
     <Styles>
-      <DynamicScrollTop/>
+      <DynamicScrollTop />
       <React.Fragment>
         <Row className="justify-content-center">
           <h1>Kontakt bei Geschäfts&shy;anfragen</h1>

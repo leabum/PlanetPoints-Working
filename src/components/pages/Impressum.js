@@ -10,12 +10,12 @@ import {
   Image
 } from "react-bootstrap";
 import styled from "styled-components";
-import DynamicScrollTop from "../dynamicScrollTop/DynamicScrollTop"
+import DynamicScrollTop from "../dynamicScrollTop/DynamicScrollTop";
 
 export const Impressum = () => {
   return (
     <React.Fragment>
-      <DynamicScrollTop/>
+      <DynamicScrollTop />
       <Row
         style={{ marginLeft: "0px", marginRight: "0px" }}
         className="justify-content-center"
