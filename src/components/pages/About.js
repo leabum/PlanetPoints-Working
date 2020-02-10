@@ -6,6 +6,7 @@ import leander from "../../assets/images/leander2.jpg";
 import maurice from "../../assets/images/maurice2.jpg";
 import leander2 from "../../assets/images/leander2_toggle.jpg";
 import maurice2 from "../../assets/images/maurice2_toggle.jpg";
+import DynamicScrollTop from "../dynamicScrollTop/DynamicScrollTop"
 
 const Styles = styled.div`
   h1{
@@ -63,6 +64,7 @@ export const About = () => {
 
   return (
     <Styles>
+      <DynamicScrollTop/>
       <React.Fragment>
         <Row className="justify-content-center" style={{ paddingTop: 0 }}>
           <div>
